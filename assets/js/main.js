@@ -263,6 +263,10 @@
 
 })()
 
+
+/**
+ * Animation random div moving
+ */
 $(document).ready(function () {
   animateDiv('.a');
   animateDiv('.b');
@@ -285,7 +289,7 @@ function makeNewPosition() {
 
 function animateDiv(myclass) {
   var newq = makeNewPosition();
-  $(myclass).animate({ top: newq[0], left: newq[1] }, 5000, function () {
+  $(myclass).animate({ top: newq[0], left: newq[1] }, 7000, function () {
     animateDiv(myclass);
   });
 
